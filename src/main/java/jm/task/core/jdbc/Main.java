@@ -10,6 +10,8 @@ public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
         UserServiceImpl uSI = UserServiceImpl.getInstance();
+        
+        uSI.createUsersTable();
 
         uSI.saveUser("Korben", "Dallas", (byte) 29);
         uSI.saveUser("Chuck", "Norris", (byte) 63);
